@@ -50,7 +50,10 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="container">
         <!-- Logo -->
         <div class="title">
-            <a href="index.php" title="MyLiShop"> <img src="../images/logohong.png" width="260px;" height="180px;"> </a>
+            <a href="index.php" title="MyLiShop"> 
+                <!-- Dùng 1 logo thống nhất -->
+                <img src="images/logoShop.png" width="260px;" height="180px;" alt="MyLiShop Logo"> 
+            </a>
         </div>
         <!-- /logo -->
         <div class="col-sm-12 col-md-12 account">

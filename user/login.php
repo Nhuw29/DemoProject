@@ -38,7 +38,7 @@
 	<header>
 	    <div class="container-fluid header_top wow bounceIn" data-wow-delay="0.1s">
 	        <div class="col-sm-10 col-md-10">
-	            <div class="header_top_left"> <span><i class="fa fa-phone"></i></span> <span>01697 450 200 | 0926 055 983</span>&nbsp;&nbsp;&nbsp; <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> <span>admin@mylishop.com.vn</span> </div>
+	            <div class="header_top_left"> <span><i class="fa fa-phone"></i></span> <span>01697 450 200 | 0926 055 983</span>&nbsp;&nbsp;&nbsp; <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> <span>admin@AliceShop.com.vn</span> </div>
 	        </div>
 	        <div class="col-sm-2 col-md-2">
 	            <div class="header_top_right">
@@ -86,12 +86,12 @@
 	        <!-- Menu -->
 	        <nav class="navbar navbar-default" role="navigation">
 	            <div class="container-fluid">
-	                <!-- Brand and toggle get grouped for better mobile display -->
+	                
 	                <div class="navbar-header">
 	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-	                    <!-- <a class="navbar-brand" href="#">MyLiShop</a> -->
+	                    
 	                </div>
-	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                
 	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                    <ul class="nav navbar-nav">
 	                        <li><a href="../index.php">Trang Chủ</a>

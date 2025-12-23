@@ -50,7 +50,6 @@
                         $thumImage = "../" . $result['image'];
                 ?>
 
-                <!-- SỬA ĐƯỜNG DẪN Ở ĐÂY: productedit-back.php -->
                 <form action="productedit-back.php?idProduct=<?= $result['id'] ?>" method="POST" enctype="multipart/form-data">
 
                     <div class="form-group">

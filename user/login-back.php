@@ -33,10 +33,9 @@
 
             // -----------------------------------------------------
             // BƯỚC 2: KIỂM TRA TÀI KHOẢN TRONG BẢNG 'users'
-            // CHÚ Ý: Password trong bảng users có thể là plain text HOẶC MD5
             // -----------------------------------------------------
             if (!$user_data) {
-                // Thử với plain text trước (vì Alice có password plain text)
+                
                 $sql_users = "SELECT id, username, role FROM users WHERE username = :username AND password = :password";
                 $stmt_users = $conn->prepare($sql_users);
                 $stmt_users->bindParam(':username', $username, PDO::PARAM_STR);

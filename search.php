@@ -400,14 +400,20 @@ try {
                                 <div class="product-price">
                                     <?php echo number_format($kq['price'], 0, ',', '.'); ?> đ
                                 </div>
-                                <div class="product-actions">
-                                    <a href="detail.php?id=<?php echo $kq['id']; ?>" class="btn-detail">
-                                        <i class="fas fa-eye me-1"></i> Xem
-                                    </a>
-                                    <a href="addcart.php?id=<?php echo $kq['id']; ?>" class="btn-buy">
-                                        <i class="fas fa-cart-plus me-1"></i> Mua
-                                    </a>
-                                </div>
+                                <div class="product-info">
+                                            <a href="addcart.php?id=<?php echo $kq['id']; ?>">
+                                                <button type="button" class="btn btn-dark">
+                                                    <label style="color: red;">&hearts;</label> Mua hàng <label
+                                                        style="color: red;">&hearts;</label>
+                                                </button>
+                                            </a>
+                                            <a href="detail.php?id=<?php echo $kq['id']; ?>">
+                                                <button type="button" class="btn btn-dark">
+                                                    <label style="color: red;">&hearts;</label> Chi Tiết <label
+                                                        style="color: red;">&hearts;</label>
+                                                </button>
+                                            </a>
+                                        </div>
                             </div>
                         </div>
                     </div>

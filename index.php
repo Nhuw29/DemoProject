@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fashion MyLiShop</title>
+    <title>Mylishop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logoShop.png">
     <link rel="stylesheet" type="text/css" href="admin/bower_components/font-awesome/css/font-awesome.min.css">
@@ -72,13 +72,13 @@
                                         </div>
                                         <div class="product-info">
                                             <a href="addcart.php?id=<?php echo $kq['id']; ?>">
-                                                <button type="button" class="btn btn-primary">
+                                                <button type="button" class="btn btn-dark">
                                                     <label style="color: red;">&hearts;</label> Mua hàng <label
                                                         style="color: red;">&hearts;</label>
                                                 </button>
                                             </a>
                                             <a href="detail.php?id=<?php echo $kq['id']; ?>">
-                                                <button type="button" class="btn btn-primary">
+                                                <button type="button" class="btn btn-dark">
                                                     <label style="color: red;">&hearts;</label> Chi Tiết <label
                                                         style="color: red;">&hearts;</label>
                                                 </button>
@@ -118,13 +118,13 @@
                                         </div>
                                         <div class="product-info">
                                             <a href="addcart.php?id=<?php echo $kq['id']; ?>">
-                                                <button type="button" class="btn btn-primary">
+                                                <button type="button" class="btn btn-dark">
                                                     <label style="color: red;">&hearts;</label> Mua hàng <label
                                                         style="color: red;">&hearts;</label>
                                                 </button>
                                             </a>
                                             <a href="detail.php?id=<?php echo $kq['id'] ?>">
-                                                <button type="button" class="btn btn-primary">
+                                                <button type="button" class="btn btn-dark">
                                                     <label style="color: red;">&hearts;</label> Chi Tiết <label
                                                         style="color: red;">&hearts;</label>
                                                 </button>
@@ -164,13 +164,13 @@
                                         </div>
                                         <div class="product-info">
                                             <a href="addcart.php?id=<?php echo $kq['id']; ?>">
-                                                <button type="button" class="btn btn-primary">
+                                                <button type="button" class="btn btn-dark">
                                                     <label style="color: red;">&hearts;</label> Mua hàng <label
                                                         style="color: red;">&hearts;</label>
                                                 </button>
                                             </a>
                                             <a href="detail.php?id=<?php echo $kq['id'] ?>">
-                                                <button type="button" class="btn btn-primary">
+                                                <button type="button" class="btn btn-dark">
                                                     <label style="color: red;">&hearts;</label> Chi Tiết <label
                                                         style="color: red;">&hearts;</label>
                                                 </button>

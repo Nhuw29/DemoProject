@@ -403,9 +403,6 @@ if (isset($_GET['addpf'])) {
                             <a href="../user/logout.php" class="nav-btn logout-btn">
                                 <i class="fa fa-sign-out"></i> Đăng xuất
                             </a>
-                            <a href="../index.php" class="nav-btn home-btn">
-                                <i class="fa fa-home"></i> Về trang chủ
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -419,10 +416,7 @@ if (isset($_GET['addpf'])) {
             <div class="col-md-12">
                 <div class="admin-nav">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="product-list.php"><i class="fa fa-cube"></i> Quản lý sản phẩm</a></li>
-                        <li><a href="category-list.php"><i class="fa fa-tags"></i> Quản lý danh mục</a></li>
-                        <li><a href="user-list.php"><i class="fa fa-users"></i> Quản lý người dùng</a></li>
-                        <li><a href="order-list.php"><i class="fa fa-shopping-cart"></i> Quản lý đơn hàng</a></li>
+                        <li class="active"><a href="product-list.php"><i class="fa fa-cube"></i> Quản lý sản phẩm</a></li> 
                     </ul>
                 </div>
             </div>
@@ -490,7 +484,23 @@ if (isset($_GET['addpf'])) {
                                     <?php endif; ?>
                                 </td>
                                 <td class="price-text"><?= number_format($row['price'], 0, ',', '.'); ?> đ</td>
-                                <td class="sale-price-text"><?= number_format($row['saleprice'], 0, ',', '.'); ?> đ</td>
+                                <td class="sale-price-text">
+                                    <?php 
+                                    // Kiểm tra xem có giá giảm không
+                                    if ($row['saleprice'] > 0 && $row['price'] > 0 && $row['saleprice'] < $row['price']) {
+                                        // Tính phần trăm giảm giá
+                                        $discount_percent = round((($row['price'] - $row['saleprice']) / $row['price']) * 100);
+                                        
+                                        // Hiển thị phần trăm giảm giá với badge đẹp
+                                        echo '<span class="discount-badge" style="background: #ff6b6b; color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 14px;">';
+                                        echo '-' . $discount_percent . '%';
+                                        echo '</span>';
+                                    } else {
+                                        // Nếu không có giảm giá, hiển thị dấu gạch ngang hoặc trống
+                                        echo '<span style="color: #999; font-size: 14px;">-</span>';
+                                    }
+                                    ?>
+                                </td>
                                 <td>
                                     <a href="product-edit.php?idProduct=<?= $row['id'] ?>" class="btn btn-info btn-sm">
                                         <i class="fa fa-edit"></i> Sửa

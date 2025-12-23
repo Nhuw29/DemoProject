@@ -67,9 +67,9 @@
         
         // Xử lý giá
         $price = (float)$row['price'];
-        $saleprice = (float)$row['saleprice'];
-        $hasSale = ($saleprice > 0);
-        $salePrice = $hasSale ? ($price - ($price * $saleprice / 100)) : $price;
+        $salePercent = (float)$row['saleprice'];
+        $hasSale = ($salePercent > 0 && $salePercent <= 100);
+        $salePrice = $hasSale ? ($price - ($price * $salePercent / 100)) : $price;
         
 ?>
             <div class="container">
@@ -85,6 +85,7 @@
                                                  width="100%" 
                                                  height="450"
                                                  onerror="this.src='images/no-image.jpg'">
+                                                 <!-- nếu ảnh lỗi, dùng ảnh mặc định -->
                                         </div>
                                     </div>
                                 </div>
